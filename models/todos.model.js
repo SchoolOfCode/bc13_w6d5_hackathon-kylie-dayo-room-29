@@ -3,16 +3,17 @@
  */
 
 //MODELS module stores all of our functions
-// you can multiple .
+// you can multiple .js files in your model.
 
 import { pool } from "../db/index.js";
-
+// defining and exporting the function
 export async function getAllTodos() {
+  // storing the query in the variable
   const sqlQuery =
     "SELECT id, task, completion_date FROM todos ORDER BY completion_date ASC, id ASC;";
-  const result = await pool.query(sqlQuery);
-  const todos = result.rows;
-  return todos;
+  const result = await pool.query(sqlQuery); // storing the query result  in the variable. you could also just put "SELECT id, task, completion_date FROM todos ORDER BY completion_date ASC, id ASC;";  straight inside the pool.query parameter.
+  const todos = result.rows; // you can console log result to decide what you want to return using the . notation but here rows is a key inside result.
+  return todos; // returning the value of todo or return result.rows
 }
 
 export async function createTodo(newTodo) {
