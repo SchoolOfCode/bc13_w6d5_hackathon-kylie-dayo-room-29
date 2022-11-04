@@ -2,6 +2,9 @@
  * Helper functions to interact with the "todos" table in the database.
  */
 
+//MODELS module stores all of our functions
+// you can multiple .
+
 import { pool } from "../db/index.js";
 
 export async function getAllTodos() {
