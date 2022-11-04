@@ -76,3 +76,12 @@ If needed, check out the resources below:
 
 - [Supertest tutorial](https://www.youtube.com/watch?v=T2sYitv2OAY)
 - [Using async/await with Supertest](https://www.youtube.com/watch?v=hWGu7qJkoaA)
+
+******\*\*******PLAN********\*********
+
+// 1. Create a database (using Elpehant SQL)
+// 2. We need to create a table
+// 3. inside table it will have a column for task
+// 4. column for completion date
+// 5. look at file and check what the javascript is doing when create button is clicked.
+// 6.
